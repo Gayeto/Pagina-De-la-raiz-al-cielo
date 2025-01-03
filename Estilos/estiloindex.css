@@ -1,0 +1,287 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Asegura que padding y bordes estén incluidos en el ancho */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* Consistencia en todo el documento */
+}
+
+/* Estilos del header */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Estilos del logo */
+
+.logo {
+    max-height: 50px; /* Restricción de la altura */
+    object-fit: contain;
+}
+
+
+/* Estilos del nombre de la página */
+.nombre-pagina {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1B2020;
+}
+
+/* Separador vertical */
+.separator {
+    width: 1px;
+    height: 40px;
+    background-color: #1B2020;
+    margin: 0 15px;
+}
+
+/* Estilos del menú */
+.navbar-nav .nav-link {
+    color: #1B2020 !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1B2020;
+    text-decoration: underline;
+}
+
+
+
+
+/* Sección de introducción */
+.introduccion {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.introduccion h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1B2020;
+    margin-bottom: 2rem;
+}
+
+.content-container {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch; /* Centra verticalmente la imagen respecto al texto */
+    justify-content: space-between;
+}
+
+.text-container {
+    flex: 0 0 60%;
+    text-align: justify;
+}
+
+.text-container p {
+     /* Espaciado entre párrafos */
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 400; /* Ligero para equilibrio con el título */
+    text-align: justify; /* Mejor alineación en texto largo */
+}
+
+.image-container {
+    flex: 0 0 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .text-container, .image-container {
+        flex: 0 0 100%;
+    }
+
+    .image-container img {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Texto adicional */
+.additional-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.additional-text p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #333; /* Color más suave para resaltar el estilo */
+    line-height: 1.8;
+}
+
+
+
+/* Para reducir los márgenes laterales de todo el contenido */
+.container {
+    max-width: 90%;
+    padding: 0 1rem;
+}
+
+
+/* Estilos para la sección "Nuestro Nombre" */
+.nuestro-nombre {
+    background-color: #096D6B;
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+
+.nuestro-nombre h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.content-container2 {
+    display: flex;
+    align-items: stretch; /* Asegura alturas iguales */
+    gap: 0rem;
+    justify-content: space-between;
+}
+
+.image-container2 {
+    flex: 0 0 18%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.image-container2 img {
+    max-width: 80%;
+    height: auto; /* Mantiene proporción */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    max-height: 500px; /* Limita el alto máximo */
+    object-fit: cover;
+}
+
+.text-container2 {
+    flex: 0 0 83%;
+    text-align: justify;
+}
+
+.text-container2 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 4.5rem;
+}
+
+
+
+/* Estilos para la sección "Nuestra Identidad" */
+.nuestra-identidad {
+    background-color: #615e30;
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+
+.nuestra-identidad h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.image-container3 {
+    margin-bottom: 2rem; /* Espaciado entre la imagen y el texto */
+}
+
+.image-container3 img {
+    max-width: 60%;
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.text-container3 p {
+    font-size: 1.5rem;
+    line-height: 1..5;
+    margin: 2rem auto;
+}
+
+.text-container3 .italic-quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Espaciado entre la cita y el texto */
+    color: #fff; /* Color más claro para resaltar */
+}
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #1B2020;
+    color: white;
+}
+
+/* Contenedor del footer */
+.footer-content {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Alineación de los elementos en el footer */
+footer p, .contacto {
+    font-size: 1rem;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+}
+
+/* Espaciado entre los íconos y el texto */
+.contacto a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contacto img.social-icon {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto;
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+}
+
+/* Cambio de color al pasar el mouse por encima */
+.contacto a:hover {
+    color: #C09F23; /* Color dorado al pasar el mouse */
+}
+
+/* Espaciado entre el texto de contacto */
+.contacto span {
+    font-size: 1rem;
+}

@@ -205,6 +205,53 @@ header {
     object-fit: contain; /* Mantiene las proporciones sin deformar la imagen */
 }
 
+
+.contacto-formulario {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-formulario h2 {
+    font-size: 3rem; /* Tamaño del título */
+    font-weight: 600; /* Mayor énfasis */
+    color: #1B2020; /* Consistencia con el header */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contacto-formulario .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contacto-formulario .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto-formulario .btn {
+    background-color: #096D6B;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-formulario .btn:hover {
+    background-color: #064d47;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .contacto-formulario {
+        padding: 1rem;
+    }
+
+    .contacto-formulario h2 {
+        font-size: 2rem;
+    }
+}
+
 /* Estilos para el footer */
 footer {
     background-color: #1B2020;
